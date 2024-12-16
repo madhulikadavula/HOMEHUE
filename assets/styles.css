@@ -1,0 +1,478 @@
+/* General Styles */
+body.home {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url('https://www.ritepathmgt.com/wp-content/uploads/2022/08/pexels-max-vakhtbovych-7534555-1-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Home Page Styles */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: auto;
+    padding: 10px 20px;
+}
+
+.nav_links {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+    display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav_links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding : 220px;
+}
+.nav_links li {
+    display: inline;
+    margin: 10px 0px;
+    padding-left: 50px;
+    padding-bottom: 70px;
+    font-size: 20;
+}
+.nav_logo {
+    text-align: center;
+    cursor: pointer;
+    padding-left: 200px;
+}
+.nav__logo img {
+    margin: auto;
+    max-width: 100px;
+    width:25px;
+    height:25px;
+    
+  }
+.nav__logo h4{
+    font-size: 1.5rem;
+    font-family: black;
+    letter-spacing: 2px;
+    color: black;
+  }
+  
+.nav__logo p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: black;
+  }
+.header {
+    /* Replace with your image */
+    background-position: center;
+    color: black;
+    font-size:0.6cm;
+    padding: 40px 30px;
+}
+
+
+
+.header__container {
+    text-align: center;
+}
+
+.header__content h1 {
+    text-decoration: none;
+}
+.header__content {
+    
+    text-decoration: none;
+}
+/* Footer styling */
+.fhome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+     /* Background color for the footer */
+    color: #fff;
+}
+
+/* Login Button styling */
+.login-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #007bff; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Login Page Styles */
+.login-form {
+    
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 20%;
+    transform: translateY(-50%);
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-form input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.login-form button {
+    width: 95%;
+    padding: 10px;
+    background-color: #007bff;
+    color:rgb(20, 28, 185);
+    border: none;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+body.login-page {
+    background-image: url(''); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* Dashboard Styles */
+/* General body styling */
+body.dashboard{
+    font-family: 'Times New Roman', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url('https://www.ritepathmgt.com/wp-content/uploads/2022/08/pexels-max-vakhtbovych-7534555-1-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Dashboard Box Styling */
+.dashboard-box {
+    background-color: #f1f1f1;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.dashboard-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-box h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.dashboard-box p {
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .dashboard-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Wishlist Styles */
+
+body.wishlist-page ,
+body.homedec{
+    background-image: white;
+    background-size: cover;
+    background-position: center;
+}
+.wishlist, .orders {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.wishlist-item, .order-item {
+    border: 10px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wishlist-item img, .order-item img {
+    max-width: 300px;
+    height: 100px;
+}
+
+/* Grid Styles for Gallery and Wishlist */
+/* General Styles */
+body.gallery-page {
+    background-image: white;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Header Styles */
+header.gallery-container,
+header.wishlist-container{
+    text-align: center;
+    padding: 30px;
+    background-color: #a6e5e1;
+}
+
+/* Gallery and Wishlist Container Styles */
+/* Gallery and Wishlist Container Styles */
+.gallery-container,
+.wishlist-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjusts to 4 items per row */
+    gap: 15px; /* Space between images */
+    padding: 20px;
+    max-width: 1200px; /* Limits the width for consistency */
+    margin: auto;
+}
+
+/* Gallery and Wishlist Item Styles */
+.gallery-item,
+.wishlist-item {
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.1); /* Adds depth */
+    display: flex;
+    flex-direction: column; /* Ensures elements stack inside */
+    align-items: center;
+    justify-content: center;
+    height: 250px; /* Sets uniform height for all images */
+}
+
+/* Image Styles within Gallery and Wishlist Items */
+.gallery-item img,
+.wishlist-item img {
+    width: 100%; /* Fills entire width of item */
+    height: 100%; /* Ensures images fit uniformly */
+    object-fit: cover; /* Ensures images fill box without stretching */
+    border-radius: 5px;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for buttons */
+    position: absolute;
+    bottom: 0;
+}
+
+/* Button Styles */
+.wishlist-button, .buy-button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.wishlist-button {
+    background-color: #dc3545; /* Red for wishlist */
+}
+
+.wishlist-button:hover {
+    background-color: #c82333; /* Darker red */
+    transform: translateY(-2px);
+}
+
+.buy-button {
+    background-color: #007bff; /* Blue for buy now */
+}
+
+.buy-button:hover {
+    background-color: #0056b3; /* Darker blue */
+    transform: translateY(-2px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .gallery-container, .wishlist-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 images per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-container, .wishlist-container {
+        grid-template-columns: 1fr; /* 1 image per row on extra small screens */
+    }
+}
+/* Footer */
+.fgallery,
+.fwish{
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(14, 92, 95, 0.8); /* Semi-transparent background */
+    color: #fff; /* White text color for contrast */
+    font-size: 1em;
+}
+
+.fgallery a,
+.fwish a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+.fgallery,
+.fwish{
+    background-color: #a6e5e1; /* Light teal hover color */
+}
+/* General body styling */
+.hcustomized{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color:black;
+    /*background-color: #f4f4f4;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/* Header styling */
+.hcustomized{
+    text-align: center;
+    padding: 20px;
+   
+}
+.bcustomized{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQEbGI5Ded8OlKIs9a8txlgQwKF4qJRib3A35Cb2zccZI2i3Ge');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:black;
+}
+/* Customized Decor Section */
+.customized-decor {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for upper row */
+    gap: 20px; /* Space between boxes */
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.customized-item {
+    background-color:beige;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+}
+
+/* Making the third box in the center of the row below */
+.customized-decor div:nth-child(3) {
+    grid-column: span 2; /* Makes the third box span across both columns */
+    margin: 0 auto; /* Centers the third box */
+    width: 60%; /* Adjust width to fit the center */
+}
+
+/* Button styling for "Customize Now" */
+.customize-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #007bff; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.customize-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px);
+}
+
+/* Footer styling for back button */
+.fcutomized {
+    text-align: center;
+    padding: 20px;
+}
+
+.fcutomized button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.fcutomized button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+

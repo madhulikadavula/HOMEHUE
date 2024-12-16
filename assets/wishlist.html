@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeHue - Wishlist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 background color="#a6e5e1">Your Wishlist</h1>
+    </header>
+
+    <section class="wishlist-container" id="wishlist-container">
+        <!-- Wishlist items will be injected here by JavaScript -->
+    </section>
+
+    <footer class="fwish">
+        <a href="gallery.html">Back to Gallery</a>
+    </footer>
+
+    <script>
+        // Function to load wishlist items from localStorage and display them
+        function loadWishlist() {
+            const wishlistContainer = document.getElementById('wishlist-container');
+            const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+
+            // Clear previous content
+            wishlistContainer.innerHTML = '';
+
+            // Display each item in the wishlist
+            wishlist.forEach((imageUrl) => {
+                const itemDiv = document.createElement('div');
+                itemDiv.className = 'wishlist-item';
+                itemDiv.innerHTML = `
+                    <img src="${imageUrl}" alt="Wishlist Item" class="wishlist-image">
+                    <button class="remove-button" onclick="removeFromWishlist('${imageUrl}')">Remove</button>
+                `;
+                wishlistContainer.appendChild(itemDiv);
+            });
+        }
+
+        // Function to remove an item from the wishlist
+        function removeFromWishlist(imageUrl) {
+            let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+            wishlist = wishlist.filter(item => item !== imageUrl);
+            localStorage.setItem('wishlist', JSON.stringify(wishlist));
+            loadWishlist();
+        }
+
+        // Load the wishlist when the page loads
+        window.onload = loadWishlist;
+    </script>
+</body>
+</html>
